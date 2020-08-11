@@ -1,5 +1,5 @@
 import React from "react";
-import Avatar from "../../assets/sugar-skull-icon.png";
+import Avatar from "../../assets/chatbot-avatar.png";
 import "./BotAvatar.css";
 
 const BotAvatar = props => {

@@ -7,7 +7,7 @@ class ActionProvider {
 
   handleHtmlList = () => {
     const message = this.createChatBotMessage(
-      "Just getting started huh? That's Awesome! Here are a some good spots to learn more about HTML:",
+      "Ah yes, HTML. My favorite markup language. Here are a few links to get you started:",
       {
         widget: "htmlLinks"
       }
@@ -45,6 +45,13 @@ class ActionProvider {
       "General Kenobi! You are a bold one."
     );
     this.updateChatbotState(greetingMessage);
+  }
+
+  scold() {
+    const scoldMessage = this.createChatBotMessage(
+      "Do you kiss your mother with that mouth?"
+    );
+    this.updateChatbotState(scoldMessage);
   }
 
   updateChatbotState(message) {

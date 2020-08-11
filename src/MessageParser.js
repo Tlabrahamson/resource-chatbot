@@ -7,7 +7,7 @@ class MessageParser {
   parse(message) {
     const lowerCaseMessage = message.toLowerCase();
 
-    if (lowerCaseMessage.includes("hi")) {
+    if (lowerCaseMessage.includes("hey")) {
       this.actionProvider.greet();
     }
 
@@ -25,6 +25,14 @@ class MessageParser {
 
     if (lowerCaseMessage.includes("javascript")) {
       this.actionProvider.handleJavascriptList();
+    }
+
+    if (
+      lowerCaseMessage.includes("fuck") ||
+      lowerCaseMessage.includes("shit") ||
+      lowerCaseMessage.includes("bitch")
+    ) {
+      this.actionProvider.scold();
     }
   }
 }

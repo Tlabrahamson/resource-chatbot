@@ -12,7 +12,7 @@ const config = {
   botName: botName,
   initialMessages: [
     createChatBotMessage(
-      `Hi, I'm ${botName}. I have some pretty solid resources on web development, what are you looking for?`,
+      `Howdy, I'm ${botName}. I have some solid resources on web development, what are you looking for?`,
       {
         widget: "learningOptions"
       }
@@ -111,19 +111,14 @@ const config = {
             id: 2
           },
           {
-            text: "Frontend Masters",
-            url: "https://frontendmasters.com",
-            id: 3
-          },
-          {
             text: "Wes Bos",
             url: "https://wesbos.com/",
-            id: 4
+            id: 3
           },
           {
             text: "W3Schools JavaScript Tutorial",
             url: "https://www.w3schools.com/js/",
-            id: 5
+            id: 4
           }
         ]
       }
